@@ -45,34 +45,38 @@ void showSelectedOption(char option) {
     if (option == 's') cout << "Scissors" << endl;
 }
  
-void chooseWinner(char uChoice, char cChoice) {
+int chooseWinner(char uChoice, char cChoice) {
     if (uChoice == ROCK && cChoice == PAPER) {
         cout << "Computer Wins! Paper wraps Rock."<< endl;
+        return 2;
     }
     else if (uChoice == PAPER && cChoice == SCISSORS) {
         cout << "Computer Wins! Scissors cut Paper."<< endl;
-        
+        return 2;
     }
     else if (uChoice == SCISSORS && cChoice == ROCK) {
         cout << "Computer Wins! Rock smashes Scissors."<< endl;
-        
+        return 2;
     }
     else if (uChoice == ROCK && cChoice == SCISSORS) {
         cout << "You Win! Paper wraps Rock."<< endl;
-        
+        return 1;
     }
     else if (uChoice == PAPER && cChoice == ROCK) {
         cout << "You Win! Paper wraps Rock."<< endl;
-        
+        return 1;
     }
     else if (uChoice == SCISSORS && cChoice == PAPER) {
         cout << "You Win! Scissors cut Paper."<< endl;
+        return 1;
     }
     else if (uChoice == EXIT){
         cout << "Thank you for playing." << endl;
+        return 0;
     }
     else {
         cout << "Tie. Play again win the Game." << endl;
+        return 0;
     }
     
 }
@@ -82,6 +86,9 @@ int main() {
     char uChoice = 'a'; 
     //Compter's choice
     char cChoice;
+    int cWins = 0;
+    int pWins = 0;
+
     while (uChoice!= 'x')
     {
         uChoice = getUserOption();
@@ -92,7 +99,12 @@ int main() {
         cChoice = getComputerOption();
         showSelectedOption(cChoice);
         
-        chooseWinner(uChoice, cChoice);
+        if (chooseWinner(uChoice, cChoice) == 1){
+            pWins ++;
+        }
+        if(chooseWinner(uChoice, cChoice) == 2){
+            cWins ++;
+        }   
     }
     return 0;
 }
