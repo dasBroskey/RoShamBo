@@ -16,7 +16,7 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "C:/Users/steve/OneDrive/Documents/BYUi/Spring 2022/Applied Programming/sprint5/roshambo.exe",
+            "program": "C:/Users/steve/OneDrive/Documents/BYUi/Spring 2022/Applied Programming/RoShamBo/roshambo.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",

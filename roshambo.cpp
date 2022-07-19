@@ -98,13 +98,14 @@ int main() {
         cout << "Computer's choice is: "<< endl;
         cChoice = getComputerOption();
         showSelectedOption(cChoice);
-        
-        if (chooseWinner(uChoice, cChoice) == 1){
+        int winner = chooseWinner(uChoice, cChoice);
+        if (winner == 1){
             pWins ++;
         }
-        if(chooseWinner(uChoice, cChoice) == 2){
+        else if(winner == 2){
             cWins ++;
-        }   
+        }  
+        cout << "Score: player " << pWins << " computer: " << cWins << endl; 
     }
     return 0;
 }
