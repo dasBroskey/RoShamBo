@@ -26,4 +26,4 @@ The libraries used are: time, Time, and iostream.
 * High score
 * username
 * Ultimate Rock-Paper-Scissors
-![alt text](https://github.com/dasBroskey/RoShamBo/blob/[branch]/image.jpg?raw=true)
+![alt text](https://github.com/dasBroskey/RoShamBo/blob/master/Ultimate%20RPS.png)
