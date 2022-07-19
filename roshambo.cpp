@@ -104,8 +104,10 @@ int main() {
         }
         else if(winner == 2){
             cWins ++;
-        }  
-        cout << "Score: player " << pWins << " computer: " << cWins << endl; 
+        }
+        cout << "-----------------------------------"  << endl;
+        cout << "Score: player: " << pWins << " computer: " << cWins << endl;
+        cout << "-----------------------------------"  << endl;
     }
     return 0;
 }
