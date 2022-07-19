@@ -5,7 +5,7 @@ To enhance my c++ skills, I created a Rock-Paper-Scissors game. The game utilize
 
 I began with a tutorial for the Rock-Paper-Scissors game and added the scoring feature as well as a loop for continous play.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/pdzUVhH0bzo)
 
 # Development Environment
 
